@@ -1,5 +1,5 @@
-from go_req.req import make_request
-
+from go_req import req
+from sample import add
 
 def test():
     url = "https://postman-echo.com/post"
@@ -12,11 +12,12 @@ def test():
     p5 = "{'name':'Toby5','email':'Toby5@example.com'}"
 
     payloads = [p1, p2, p3, p4, p5]
-    results = make_request(url,headers,payloads,user_ids)
+    results = req.make_request(url,headers,payloads,user_ids)
 
     import json
     print (" =======================output=============================== ")
     print (json.dumps(results))
 
-
+p = add.addNumers(10,20)
+print p
 test()
