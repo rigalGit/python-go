@@ -1,4 +1,4 @@
-from go_http.req import make_request
+from go_req.req import make_request
 
 
 def test():

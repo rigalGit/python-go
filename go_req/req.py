@@ -1,6 +1,6 @@
 from ctypes import *
 ROOT_PATH = "/Users/jitendra/moengage/python-go/go_http/"
-FILE_NAME = "_go_http.so"
+FILE_NAME = "go_http_req.so"
 http_lib = cdll.LoadLibrary(ROOT_PATH+FILE_NAME)
 
 # define class GoSlice to map to:
